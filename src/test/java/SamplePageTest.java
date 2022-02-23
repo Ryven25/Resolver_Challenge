@@ -35,7 +35,6 @@ public class SamplePageTest extends BaseTest {
 
     @Test
     public void test2() {
-        assertTrue(samplePage.isLoaded());
         assertEquals(3, samplePage.getNumberOfValuesInList());
 
         ArrayList<String> values = samplePage.getValuesList();
@@ -46,7 +45,6 @@ public class SamplePageTest extends BaseTest {
 
     @Test
     public void test3() {
-        assertTrue(samplePage.isLoaded());
         assertEquals("Option 1", samplePage.getButtonOption());
         samplePage.chooseOption(3);
         assertEquals("Option 3", samplePage.getButtonOption());
@@ -61,7 +59,7 @@ public class SamplePageTest extends BaseTest {
     @Test
     public void test5() {
         samplePage.clickTest5Button();
-        assertTrue(samplePage.isTest5ButtonEnabled());
+        assertTrue(samplePage.isTest5ButtonDisabled());
         assertTrue(samplePage.isAlertDisplayed());
     }
 

@@ -102,7 +102,7 @@ public class SamplePage extends BasePage {
         waitElementIsClickable(Consts.BUTTON_IS_DISPLAYED).click();
     }
 
-    public Boolean isTest5ButtonEnabled() {
+    public Boolean isTest5ButtonDisabled() {
         return Boolean.valueOf(findElementByXpath(Consts.BUTTON_IS_DISPLAYED).getAttribute("disabled"));
     }
 
